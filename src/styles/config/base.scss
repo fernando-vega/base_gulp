@@ -1,0 +1,62 @@
+*{
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+}
+
+body{
+    color: $font-color;
+    font-family: $font-text;
+    font-size: $font-size;
+    font-weight: $font-weight;
+    margin: auto;
+    overflow-x: hidden;
+    &.popup-active{
+        overflow: hidden;
+    }
+    @include breakpoint(desktop) {
+        font-size: $font-size - 2px;
+    } 
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1em;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  li {
+    list-style: none;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.limiter-content{
+    display: block;
+    margin: auto;
+    max-width: $limiter-content;
+    padding: 0 $padding;
+    &.limiter-max{
+        max-width: $limiter-content-max;
+    }
+    @include breakpoint(desktop) {
+        padding: 0 $padding*2;
+    }
+}
+
+

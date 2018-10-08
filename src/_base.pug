@@ -1,0 +1,40 @@
+
+
+block variables
+
+doctype html
+html(lang="es")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, minimum-scale=1.0, maximum-scale=1.0")
+        title ::Login
+
+
+        meta(name="application-name", content="Title")
+        meta(name="description", content="descripcion")
+        meta(name="keywords", content="")
+        meta(name="robots", content="index, follow")
+
+        meta(name="author", content="Title")
+
+        meta(property="og:title", content="Title")
+        meta(property="og:image", content="")
+        meta(property="og:description", content="")
+
+        link(href="/images/favicon.png" rel="shortcut icon" type="image/x-icon")
+        link(href="/images/favicon.png" rel="icon" type="image/x-icon")
+
+        link(rel="stylesheet" href="/vendor/normalize.css")
+        link(rel="stylesheet" href="/vendor/flexboxgrid.min.css")
+        link(href="css/main.css" rel="stylesheet")
+        
+    body
+
+        #page-container
+            section#content-page
+                block content
+
+
+
+        script(src="js/main.js")
